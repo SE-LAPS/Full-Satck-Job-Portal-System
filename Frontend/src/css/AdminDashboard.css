@@ -1,0 +1,14 @@
+.dashboard-container {
+  display: flex;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.register-company-section,
+.job-category-section {
+  margin-top: 20px;
+}
