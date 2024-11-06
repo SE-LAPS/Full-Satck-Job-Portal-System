@@ -1,0 +1,153 @@
+.wantJob {
+   font-family: 'Arial, sans-serif';
+}
+
+.jobCategories,
+.hotJobs {
+   margin: 20px auto;
+   width: 80%;
+}
+
+.jobCategories h2,
+.hotJobs h2 {
+   text-align: center;
+   font-size: 2em;
+   margin-bottom: 20px;
+}
+
+.categoriesGrid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   gap: 20px;
+   padding: 20px;
+}
+
+.category {
+   text-align: center;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   transition: background 0.3s, transform 0.3s;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category:hover {
+   background: #f0f0f0;
+   transform: translateY(-5px);
+}
+
+.categoryName {
+   font-size: 1.2em;
+   font-weight: bold;
+}
+
+.openPositions {
+   display: block;
+   margin-top: 10px;
+   color: #666;
+}
+
+.jobCard {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   margin: 10px 0;
+   transition: background 0.3s, transform 0.3s;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jobCard:hover {
+   background: #f0f0f0;
+   transform: translateY(-5px);
+}
+
+.jobInfo h3 {
+   margin: 0;
+   font-size: 1.5em;
+}
+
+.jobInfo span {
+   display: block;
+   margin: 5px 0;
+}
+
+.jobType {
+   text-align: right;
+}
+
+.badge {
+   display: inline-block;
+   padding: 5px 10px;
+   border-radius: 12px;
+   color: #fff;
+   margin-bottom: 10px;
+}
+
+.badge.featured {
+   background: #5bc0de;
+}
+
+.badge.urgent {
+   background: #d9534f;
+}
+
+.badge.remote {
+   background: #5cb85c;
+}
+
+.applyButton {
+   background: #337ab7;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background 0.3s;
+}
+
+.applyButton:hover {
+   background: #286090;
+}
+
+.loadMoreButton {
+   display: inline-block;
+   /* Makes the button an inline block to center it */
+   width: 40%;
+   padding: 13px;
+   margin: 20px 0;
+   background: #337ab7;
+   color: #fff;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: background 0.3s;
+}
+
+.loadMoreButton:hover {
+   background: #286090;
+}
+
+.pagination {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.pagination .page {
+   display: inline-block;
+   padding: 10px;
+   margin: 0 5px;
+   cursor: pointer;
+   transition: background 0.3s;
+}
+
+.pagination .page:hover {
+   background: #f0f0f0;
+}
+
+.pagination .page.active {
+   font-weight: bold;
+   text-decoration: underline;
+}
