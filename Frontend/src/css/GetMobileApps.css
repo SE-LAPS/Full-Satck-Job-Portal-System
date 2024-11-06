@@ -1,0 +1,103 @@
+.promo-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: linear-gradient(90deg, #007bff, #00d4ff);
+   /* Adjust gradient direction and colors */
+   padding: 50px;
+   color: white;
+}
+.text-section {
+   flex: 1;
+   max-width: 50%;
+}
+
+.text-section h1 {
+   font-size: 3em;
+   margin-bottom: 20px;
+}
+
+.text-section p {
+   font-size: 1.2em;
+   margin-bottom: 40px;
+}
+
+.button-container {
+   display: flex;
+   gap: 20px;
+}
+.store-button {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.5rem;
+   color: #ffffff; /* Text color */
+   text-decoration: none; /* Remove underline */
+ }
+ 
+ .store-button img {
+   filter: invert(1); /* Turns the image color to white */
+ }
+ 
+
+/* Adjustments for button animation */
+.store-button {
+   background-color: #333;
+   padding: 10px 20px;
+   color: white;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   border-radius: 8px;
+   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect to change background color and add scaling animation */
+.store-button:hover {
+   background-color: #555;
+   transform: scale(1.05);
+}
+
+h1 {
+   margin-left: -12px; /* Adjust this value as needed */
+ }
+
+p {
+   color:#000000;
+}
+ 
+.store-button img {
+   width: 20px;
+   height: auto;
+   margin-right: 10px;
+   transition: transform 0.3s ease;
+}
+.image-section {
+   flex: 1;
+   display: flex;
+   justify-content: flex-end;
+   /* Aligns the image to the right */
+   align-items: center;
+}
+/* Adding subtle animation to the icon on hover */
+.store-button:hover img {
+   transform: rotate(15deg);
+}
+
+ 
+.phone-img {
+   max-width: 80%;
+   height: auto;
+   object-fit: contain;
+   /* Ensures the image retains its aspect ratio and fits well in its container */
+}
+/* Media queries to fix button resolution on smaller screens */
+@media (max-width: 768px) {
+   .store-button {
+       padding: 12px 15px;
+       font-size: 0.9em;
+   }
+
+   .store-button img {
+       width: 18px;
+   }
+}
