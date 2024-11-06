@@ -1,0 +1,226 @@
+.top-nav {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1001;
+}
+
+.company-logo {
+  height: 40px;
+  width: auto;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-nav-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.top-nav-btn {
+  padding: 14px 16px;
+  text-decoration: none;
+  height: 19px;
+  color: white;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.top-nav-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.post-job-btn {
+  width: fit-content;
+  display: flex;
+  padding: 2.9em 1.2em;
+  gap: 0.4rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(136 0 136 / 50%);
+  background: linear-gradient(
+    15deg,
+    #004a99,
+    #005cbf,
+    #007bff,
+    #3395ff,
+    #66afff,
+    #3395ff,
+    #007bff,
+    #005cbf,
+    #004a99
+  ) no-repeat;
+  background-size: 300%;
+  background-position: left center;
+  transition: background 0.3s ease;
+  color: #fff;
+  font-size: 16px;
+  height: 44px;
+  align-items: center;
+}
+
+.post-job-btn:hover {
+  background-size: 320%;
+  background-position: right center;
+}
+
+.post-job-btn svg {
+  width: 23px;
+  fill: #6db4ff;
+  transition: 0.3s ease;
+}
+
+.post-job-btn:hover svg {
+  fill: #fff;
+}
+
+.btn-shine {
+  position: relative;
+  padding: 10px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #0037ff 0, #fff 10%, #008cff 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 650;
+  font-size: 18px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+  transform: translateY(8px);
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+/* New styles for welcome text, user profile, and dropdown menu */
+.logout-button {
+  display: block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; 
+}
+
+.logout-button:hover {
+  background-color: #0056b3; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.welcome-text {
+  margin-right: 10px;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  margin-top: 18px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.user-avatar:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: dropdown 0.3s ease;
+  overflow: hidden;
+}
+
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 14px;
+  border-width: 8px;
+  border-style: solid;
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+}
+
+.dropdown-menu a,
+.dropdown-menu button {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
