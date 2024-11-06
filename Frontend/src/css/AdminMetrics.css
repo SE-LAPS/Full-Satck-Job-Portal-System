@@ -1,0 +1,78 @@
+.metrics-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 20px;
+}
+
+.metric-card {
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   text-align: center;
+   width: 200px;
+   flex: 1;
+}
+
+.metric-card h3 {
+   margin: 0;
+   font-size: 1.2em;
+   color: #333;
+}
+
+.metric-card p {
+   font-size: 2em;
+   margin: 10px 0 0;
+   color: #007bff;
+}
+
+/* Color Styles for Different Metric Cards */
+.metric-card.login-members {
+   background-color: #e3f2fd;
+   /* Light blue */
+   border-left: 5px solid #2196f3;
+   /* Blue */
+}
+
+.metric-card.registered-members {
+   background-color: #e8f5e9;
+   /* Light green */
+   border-left: 5px solid #4caf50;
+   /* Green */
+}
+
+.metric-card.registered-companies {
+   background-color: #fff3e0;
+   /* Light orange */
+   border-left: 5px solid #ff9800;
+   /* Orange */
+}
+
+.metric-card.job-categories {
+   background-color: #f3e5f5;
+   /* Light purple */
+   border-left: 5px solid #9c27b0;
+   /* Purple */
+}
+.metric-summary {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   width: 100%;
+}
+.metric-card {
+   background-color: #f9f9f9;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   margin: 10px;
+   text-align: center;
+   flex: 1;
+   max-width: 250px;
+}
+.chart-section {
+   margin-top: 40px;
+   width: 80%;
+   overflow: hidden;
+}
