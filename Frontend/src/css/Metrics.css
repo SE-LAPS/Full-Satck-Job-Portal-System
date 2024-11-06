@@ -1,0 +1,67 @@
+.metrics {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metrics-summary {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+.metric-item {
+   padding: 15px;
+   border-radius: 8px;
+   text-align: center;
+   flex: 1;
+   margin: 0 10px;
+   color: #fff;
+   /* Set the text color to white to contrast with colored backgrounds */
+}
+
+.metric-item h3 {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+
+.metric-item p {
+   font-size: 24px;
+   font-weight: bold;
+}
+
+/* Assigning different background colors to each metric section */
+.metric-item.job-posts {
+   background-color: #007bff;
+   /* Blue for Job Posts */
+}
+
+.metric-item.apply-jobs {
+   background-color: #dc3545;
+   /* Red for Total Apply Jobs */
+}
+
+.metric-item.shortlisted {
+   background-color: #28a745;
+   /* Green for Shortlisted Candidates */
+}
+
+.metric-item.rejected {
+   background-color: #ffc107;
+   /* Yellow for Rejected Candidates */
+}
+
+.charts-container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.bar-chart-container,
+.pie-chart-container {
+   background-color: #f8f9fa;
+   padding: 15px;
+   border-radius: 8px;
+   flex: 1;
+   margin: 0 10px;
+}
