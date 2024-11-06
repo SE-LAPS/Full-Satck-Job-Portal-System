@@ -1,0 +1,38 @@
+.dashboard-container {
+    display: flex;
+  }
+  
+  .dashboard {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .metrics,
+  .recent-job-posts {
+    margin-bottom: 20px;
+  }
+  
+  .metrics-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .metric {
+    border: 1px solid #ddd;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  /* Styles for the date fields */
+.date-range-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.date-field {
+  width: 45%;
+}
