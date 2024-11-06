@@ -1,0 +1,64 @@
+.recent-job-posts {
+   margin-top: 30px;
+   padding: 20px;
+   background-color: #ffffff;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 12px;
+}
+
+.recent-job-posts h2 {
+   font-size: 24px;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+.job-posts-table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.job-posts-table th,
+.job-posts-table td {
+   padding: 15px;
+   text-align: left;
+   border-bottom: 1px solid #dee2e6;
+}
+
+.job-posts-table th {
+   background-color: #f8f9fa;
+   font-weight: bold;
+   color: #343a40;
+}
+
+.job-posts-table tr:hover {
+   background-color: #f1f3f5;
+}
+
+.job-posts-table td a {
+   color: #007bff;
+   text-decoration: none;
+}
+
+.job-posts-table td a:hover {
+   text-decoration: underline;
+}
+
+.pagination {
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+.pagination button {
+   margin: 0 5px;
+   padding: 5px 10px;
+   border: 1px solid #ddd;
+   background-color: #f9f9f9;
+   cursor: pointer;
+}
+
+.pagination button.active {
+   background-color: #007bff;
+   color: white;
+   border-color: #007bff;
+}
