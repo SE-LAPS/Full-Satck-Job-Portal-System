@@ -1,0 +1,250 @@
+/* company features section */
+
+/* JobListing.css */
+
+.job-listing {
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.filters {
+  margin-bottom: 1rem;
+}
+
+
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.job-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 300px;
+  text-align: left;
+}
+
+.company-logo {
+  max-width: 100px;
+  margin-bottom: 0.5rem;
+}
+
+.apply-button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #007bff, #00d4ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+
+.filters {
+ margin-bottom: 1rem;
+ display: flex;
+ justify-content: center;
+ gap: 1rem;
+}
+
+.filter-button {
+ --c: #fff;
+ background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+ #007bff;
+ color: #0000;
+ border: none;
+ transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+ text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+   calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+ outline-offset: .1em;
+ transition: 0.3s;
+ font-family: system-ui, sans-serif;
+ font-weight: bold;
+ font-size: 1rem;
+ margin: 0;
+ cursor: pointer;
+ padding: .5em 1em;
+}
+
+.filter-button:hover,
+.filter-button:focus-visible {
+ --_p: 0%;
+ --_i: 1;
+}
+
+.filter-button:active {
+ text-shadow: none;
+ color: var(--c);
+ box-shadow: inset 0 0 9e9q #0005;
+ transition: 0s;
+}
+
+
+/* JobListing.css */
+
+/* ... (existing styles remain the same) */
+
+.fancy {
+ background-color: transparent;
+ border: 2px solid #007bff;
+ border-radius: 0;
+ box-sizing: border-box;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ margin: 0;
+ outline: none;
+ overflow: visible;
+ padding: 1.25em 2em;
+ position: relative;
+ text-align: center;
+ text-decoration: none;
+ text-transform: none;
+ transition: all 0.3s ease-in-out;
+ user-select: none;
+ font-size: 13px;
+}
+
+.fancy::before {
+ content: " ";
+ width: 1.5625rem;
+ height: 2px;
+ background: #007bff;
+ top: 50%;
+ left: 1.5em;
+ position: absolute;
+ transform: translateY(-50%);
+ transform-origin: center;
+ transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+ font-size: 1.125em;
+ line-height: 1.33333em;
+ padding-left: 2em;
+ display: block;
+ text-align: left;
+ transition: all 0.3s ease-in-out;
+ text-transform: uppercase;
+ text-decoration: none;
+ background: linear-gradient(45deg, #007bff, #00d4ff);
+}
+
+.fancy .top-key {
+ height: 2px;
+ width: 1.5625rem;
+ top: -2px;
+ left: 0.625rem;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+ height: 2px;
+ width: 1.5625rem;
+ right: 1.875rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+ height: 2px;
+ width: 0.625rem;
+ right: 0.625rem;
+ bottom: -2px;
+ position: absolute;
+ background: #e8e8e8;
+ transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+ color: white;
+ background: linear-gradient(45deg, #007bff, #00d4ff);
+}
+
+.fancy:hover::before {
+ width: 0.9375rem;
+ background: white;
+}
+
+.fancy:hover .text {
+ color: white;
+ padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+ left: -2px;
+ width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+ right: 0;
+ width: 0;
+}
+
+.browse-more-button {
+ align-items: center;
+ background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+ border: 0;
+ border-radius: 8px;
+ box-shadow: rgba(0, 30, 255, 0.2) 0 15px 30px -5px;
+ box-sizing: border-box;
+ color: #FFFFFF;
+ display: flex;
+ font-family: Phantomsans, sans-serif;
+ font-size: 18px;
+ justify-content: center;
+ line-height: 1em;
+ max-width: 100%;
+ min-width: 140px;
+ padding: 3px;
+ text-decoration: none;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ white-space: nowrap;
+ cursor: pointer;
+ transition: all .3s;
+ margin: 2rem auto; /* Center the button and add some margin */
+}
+
+.browse-more-button:active,
+.browse-more-button:hover {
+ outline: 0;
+}
+
+.browse-more-button span {
+ background: linear-gradient(45deg, #007bff, #00d4ff);
+ padding: 16px 24px;
+ border-radius: 6px;
+ width: 100%;
+ height: 100%;
+ transition: 300ms;
+}
+
+.browse-more-button:hover span {
+ background: none;
+}
+
+.browse-more-button:active {
+ transform: scale(0.9);
+}
