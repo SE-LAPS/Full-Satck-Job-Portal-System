@@ -1,0 +1,64 @@
+.job-categories {
+  overflow: hidden;
+}
+
+.companies-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.companies-list {
+  display: flex;
+  gap: 1rem;
+  animation: scroll var(--animation-duration) linear infinite;
+  width: calc(var(--scroll-width) * 2);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * var(--scroll-width)));
+  }
+}
+
+.company-item {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #0056b3;
+  border-radius: 8px;
+  min-width: 200px;
+}
+
+.company-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.company-name {
+  margin: 0.5rem 0;
+}
+
+.company-location {
+  margin-bottom: 0.5rem;
+}
+
+.open-positions-button {
+  background: linear-gradient(45deg, #007bff, #00d4ff);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.open-positions-button:hover {
+  background-color: #0056b3;
+}
